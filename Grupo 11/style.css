@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&display=swap");
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background: #0f0f13;
+  font-family: "Rajdhani", sans-serif;
+  color: white;
+  user-select: none;
+}
+
+#ui-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.top-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-shadow: 0 0 20px rgba(0, 210, 255, 0.6);
+}
+.logo {
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 5px;
+  margin: 0;
+  line-height: 1;
+}
+.logo span {
+  color: #00d2ff;
+}
+#timer {
+  font-size: 4rem;
+  font-weight: bold;
+  font-variant-numeric: tabular-nums;
+  color: #fff;
+  margin-top: 5px;
+}
+
+.controls-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  pointer-events: none;
+}
+
+.card {
+  background: rgba(20, 20, 25, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 16px;
+  pointer-events: auto;
+  width: 367px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+.card h3 {
+  margin: 0 0 15px 0;
+  color: #00d2ff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+}
+
+.key-map div {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.key-map span {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  min-width: 20px;
+  text-align: center;
+}
+
+.hint {
+  font-size: 0.85rem;
+  color: #888;
+  margin-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: 10px;
+}
+
+/* --- Botões e Grupo --- */
+.btn-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.glow-btn {
+  flex: 1; /* Ocupa espaço igual */
+  background: linear-gradient(135deg, #00d2ff, #007bff);
+  border: none;
+  padding: 14px;
+  color: white;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-transform: uppercase;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  transition: all 0.2s;
+}
+
+/* Botão de Reset (Danger/Vermelho) */
+.glow-btn.danger {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    border: 1px solid #ff416c;
+}
+.glow-btn.danger:hover {
+    box-shadow: 0 0 15px rgba(255, 65, 108, 0.5);
+}
+
+/* Botão de Debug (Cinza/Pequeno) */
+.glow-btn.secondary {
+    flex: 0;
+    min-width: 60px;
+    background: linear-gradient(135deg, #444, #222);
+    border: 1px solid #666;
+}
+.glow-btn.secondary:hover {
+    background: #555;
+    box-shadow: 0 0 15px rgba(255,255,255,0.2);
+    filter: brightness(1.2);
+}
+
+.glow-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px rgba(0, 210, 255, 0.6);
+  filter: brightness(1.1);
+}
+.glow-btn:active {
+  transform: scale(0.98);
+}
+
+#score-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#score-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 1rem;
+}
+#score-list li:first-child {
+  color: #ffd700;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.hidden {
+  display: none !important;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  pointer-events: auto;
+  animation: fadeIn 0.3s;
+}
+.modal-box {
+  background: #1a1a20;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  border: 2px solid #00d2ff;
+  box-shadow: 0 0 60px rgba(0, 210, 255, 0.3);
+  max-width: 400px;
+  width: 90%;
+}
+.modal-box h1 {
+  color: white;
+  margin: 0 0 20px 0;
+  text-shadow: 0 0 20px #00d2ff;
+}
+.input-group {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 25px;
+}
+#player-name {
+  background: #2a2a30;
+  border: 1px solid #444;
+  color: white;
+  padding: 12px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 8px;
+  width: 150px;
+  font-family: "Rajdhani";
+  outline: none;
+}
+#player-name:focus {
+  border-color: #00d2ff;
+}
+#btn-save {
+  background: #00d2ff;
+  border: none;
+  padding: 0 25px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  color: #000;
+  font-family: "Rajdhani";
+  font-size: 1.1rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.mode-selector {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    background: rgba(0,0,0,0.3);
+    padding: 5px;
+    border-radius: 20px;
+    pointer-events: auto;
+}
+
+.mode-btn {
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.2);
+    color: #aaa;
+    padding: 5px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: "Rajdhani";
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.mode-btn:hover {
+    background: rgba(255,255,255,0.1);
+    color: white;
+}
+
+.mode-btn.active {
+    background: #00d2ff;
+    color: black;
+    border-color: #00d2ff;
+    box-shadow: 0 0 10px rgba(0, 210, 255, 0.5);
+}
