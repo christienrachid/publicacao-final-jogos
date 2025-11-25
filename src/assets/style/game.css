@@ -1,0 +1,207 @@
+@font-face {
+  font-family: "EarlyGameBoy";
+  src: url("../fnt/EarlyGameBoy.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: radial-gradient(circle at center, #555 0%, #222 100%);
+  font-family: "Early GameBoy", monospace;
+  color: #0f380f;
+  overflow: hidden;
+}
+
+.lcd-frame {
+  position: relative;
+  display: inline-block;
+  background-color: #9bbc0f;
+  border: 8px solid #8b8b8b;
+  border-radius: 12px;
+  box-shadow: inset 0 0 10px #444, 0 6px 25px rgba(0, 0, 0, 0.6);
+  padding: 16px;
+}
+
+canvas {
+  display: block;
+  border-radius: 6px;
+  background-color: #9bbc0f;
+
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  image-rendering: -moz-crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+
+  position: relative;
+  z-index: 1;
+}
+
+.lcd-frame::after {
+  content: "";
+  position: absolute;
+  inset: 16px;
+  pointer-events: none;
+  border-radius: 6px;
+  z-index: 2;
+
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.08) 0px,
+    rgba(0, 0, 0, 0.08) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+
+  box-shadow: inset 0 0 25px rgba(255, 255, 255, 0.15),
+    inset 0 0 60px rgba(0, 0, 0, 0.1);
+}
+
+.lcd-frame::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  right: 8px;
+  height: 50%;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  border-radius: 8px 8px 0 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.game-overlay {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  border-radius: 6px;
+  font-family: "EarlyGameBoy", monospace;
+  text-align: center;
+  pointer-events: none;
+}
+
+.game-overlay.show {
+  display: flex;
+}
+
+.game-overlay.gameover {
+  background-color: rgba(0, 0, 0, 0.95);
+  color: #ffffff;
+}
+
+.game-overlay.victory {
+  background-color: rgba(155, 188, 15, 0.98);
+  color: #000000;
+}
+
+.game-overlay.menu {
+  background-color: #9bbc0f;
+  color: #0f380f;
+  gap: 5px;
+}
+
+.menu-border {
+  font-size: 48px;
+  margin: 5px 0;
+  color: #306230;
+  font-weight: bold;
+  line-height: 0.5;
+  opacity: 0.7;
+}
+
+.menu-title {
+  font-size: 48px;
+  margin: 5px 0 10px 0;
+  line-height: 1;
+  letter-spacing: 6px;
+  color: #0f380f;
+  font-weight: bold;
+  text-shadow: 2px 2px 0px rgba(48, 98, 48, 0.3);
+}
+
+.menu-start {
+  font-size: 16px;
+  margin: 30px 0 25px 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  animation: blink 1.2s ease-in-out infinite;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+.menu-controls {
+  margin: 20px 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+}
+
+.menu-controls p {
+  font-size: 12px;
+  margin: 5px 0;
+  color: #306230;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+}
+
+.menu-objective {
+  font-size: 13px;
+  margin-top: 20px;
+  padding: 0;
+  background-color: transparent;
+  color: #0f380f;
+  border-radius: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.game-overlay h1 {
+  font-size: 28px;
+  margin-bottom: 16px;
+  letter-spacing: 2px;
+}
+
+.game-overlay p {
+  font-size: 16px;
+  margin: 6px 0;
+}
+
+.game-overlay .restart {
+  font-size: 12px;
+  margin-top: 20px;
+  opacity: 0.8;
+}

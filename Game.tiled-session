@@ -1,0 +1,162 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "src/assets/mapJson/tiled/mapTiled.tmx",
+    "expandedProjectPaths": [
+        "src",
+        "src/assets/mapJson",
+        ".",
+        "src/assets",
+        "src/assets/mapJson/tiled"
+    ],
+    "fileStates": {
+        "": {
+            "scaleInDock": 5.5,
+            "scaleInEditor": 1
+        },
+        "door.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "floor.tsx": {
+            "scaleInDock": 2,
+            "scaleInEditor": 1
+        },
+        "minecart.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "prop.tsx": {
+            "scaleInDock": 3,
+            "scaleInEditor": 1
+        },
+        "src/assets/mapJson/door.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "src/assets/mapJson/floor.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "src/assets/mapJson/map.json": {
+            "scale": 2.03359375,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 127.85247791010372,
+                "y": 128.09834805993083
+            }
+        },
+        "src/assets/mapJson/map.json#door": {
+            "scaleInDock": 1
+        },
+        "src/assets/mapJson/mapTiled.tmx": {
+            "scale": 3,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 112.16666666666669,
+                "y": 136.49999999999997
+            }
+        },
+        "src/assets/mapJson/mapTiled.tmx#door": {
+            "scaleInDock": 4
+        },
+        "src/assets/mapJson/mapTiled.tmx#floor": {
+            "scaleInDock": 1
+        },
+        "src/assets/mapJson/mapTiled.tmx#minecart": {
+            "scaleInDock": 1
+        },
+        "src/assets/mapJson/mapTiled.tmx#prop": {
+            "scaleInDock": 2
+        },
+        "src/assets/mapJson/mapTiled.tmx#wall": {
+            "scaleInDock": 1
+        },
+        "src/assets/mapJson/minecart.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "src/assets/mapJson/prop.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "src/assets/mapJson/src/assets/mapJson/floor.tsx": {
+            "scaleInDock": 1
+        },
+        "src/assets/mapJson/src/assets/mapJson/minecart.tsx": {
+            "scaleInDock": 1
+        },
+        "src/assets/mapJson/src/assets/mapJson/prop.tsx": {
+            "scaleInDock": 1
+        },
+        "src/assets/mapJson/src/assets/mapJson/wall.tsx": {
+            "scaleInDock": 1
+        },
+        "src/assets/mapJson/tiled/mapTiled.tmx": {
+            "scale": 2.03359375,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 128.09834805993086,
+                "y": 142.35881674990395
+            }
+        },
+        "src/assets/mapJson/tiled/mapTiled.tmx#door": {
+            "scaleInDock": 1
+        },
+        "src/assets/mapJson/tiled/mapTiled.tmx#floor": {
+            "scaleInDock": 1
+        },
+        "src/assets/mapJson/tiled/mapTiled.tmx#minecart": {
+            "scaleInDock": 1
+        },
+        "src/assets/mapJson/tiled/mapTiled.tmx#prop": {
+            "scaleInDock": 1
+        },
+        "src/assets/mapJson/tiled/mapTiled.tmx#wall": {
+            "scaleInDock": 1
+        },
+        "src/assets/mapJson/wall.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "wall.tsx": {
+            "scaleInDock": 5.5,
+            "scaleInEditor": 1
+        }
+    },
+    "last.exportedFilePath": "C:/Users/ninho/OneDrive/Área de Trabalho/Trabalho Final/game/src/assets/mapJson",
+    "last.externalTilesetPath": "C:/Users/ninho/OneDrive/Área de Trabalho/Trabalho Final/game/src/assets/mapJson",
+    "last.imagePath": "C:/Users/ninho/OneDrive/Área de Trabalho/Trabalho Final/game/src/assets/img/sprites/scenarios",
+    "map.height": 16,
+    "map.lastUsedExportFilter": "Todos os Ficheiros (*)",
+    "map.lastUsedFormat": "tmx",
+    "map.renderOrder": "3",
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
+    "map.width": 16,
+    "openFiles": [
+        "src/assets/mapJson/tiled/mapTiled.tmx"
+    ],
+    "project": "Game.tiled-project",
+    "recentFiles": [
+        "src/assets/mapJson/tiled/mapTiled.tmx",
+        "src/assets/mapJson/mapTiled.tmx",
+        "src/assets/mapJson/wall.tsx",
+        "src/assets/mapJson/prop.tsx",
+        "src/assets/mapJson/floor.tsx",
+        "src/assets/mapJson/minecart.tsx",
+        "src/assets/mapJson/door.tsx",
+        "src/assets/mapJson/map.json",
+        "prop.tsx",
+        "minecart.tsx",
+        "floor.tsx",
+        "door.tsx"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 16,
+        "width": 16
+    }
+}
