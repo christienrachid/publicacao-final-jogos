@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Jogo</title>
+    <link rel="stylesheet" href="./src/assets/style/game.css" />
+  </head>
+  <body>
+    <div class="lcd-frame">
+      <div id="screen"></div>
+
+      <div id="menuOverlay" class="game-overlay menu">
+        <div class="menu-border">===========</div>
+        <h1 class="menu-title">AXE BOY</h1>
+        <div class="menu-border">===========</div>
+
+        <p class="menu-start" id="menuStart">Pressione ENTER</p>
+        <div class="menu-controls">
+          <p>WASD/Setas - Mover</p>
+          <p>Espaco/J - Atacar</p>
+        </div>
+        <p class="menu-objective">Sobreviva 20 Hordas!</p>
+      </div>
+
+      <div id="gameOverOverlay" class="game-overlay gameover">
+        <h1>GAME OVER</h1>
+        <p id="gameOverHorda">Horda: 0</p>
+        <p id="gameOverPontos">Pontos: 0</p>
+        <p class="restart">Pressione F5 para Recomecar</p>
+      </div>
+
+      <div id="victoryOverlay" class="game-overlay victory">
+        <h1>VITÓRIA!</h1>
+        <p id="victoryHordas">Completou 20 Hordas!</p>
+        <p id="victoryPontos">Pontos: 0</p>
+        <p class="restart">Pressione F5 para Recomecar</p>
+      </div>
+    </div>
+
+    <script type="module" src="./src/js/game.js"></script>
+  </body>
+</html>
