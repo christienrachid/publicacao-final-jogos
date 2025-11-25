@@ -1,41 +1,56 @@
-Projeto Final dos Alunos: Publicação de Jogos
-Este repositório foi criado para que os alunos possam publicar a versão final de seus jogos. Siga as instruções abaixo para garantir que seu projeto seja enviado corretamente.
+# Eternal Rot
 
-1. Como Publicar o Seu Jogo
-Você pode escolher entre duas opções para enviar seu trabalho. A Opção 1 é a mais recomendada se você já tem familiaridade com o Git. A Opção 2 é a mais simples se você prefere usar a interface web do GitHub.
+Eternal Rot é um jogo Bullet Heaven em que o jogador é um sobrevivente de um apocalypse zumbi e precisa sobreviver as infinitas e seu objetivo é sobreviver o máximo possível. Os zumbis tem a chance de dropar armas que a cada nível aumentar o alcance, dano e a velocidade de disparo e ao fim de cada horda é possível escolher um upgrade para fortalecer seu personagem.
 
-Opção 1: Usando a Linha de Comando (Git)
-Clone o repositório para a sua máquina:
-git clone https://github.com/christienrachid/nome-do-seu-repositorio.git
-cd nome-do-seu-repositorio
+Para jogar, acesse: https://trabalho-final-desenv-jogos.vercel.app
 
-Crie uma nova pasta com o seu nome completo ou nome da equipe dentro deste repositório.
+## Grupo:
 
-Copie todos os arquivos do seu jogo para a pasta que você acabou de criar.
+- Emanuel Andrade
+- Lucas de Paiva Ribeiro
+- Pedro Lucas Atalaia Fernandes
 
-Adicione os arquivos, faça o commit e envie as alterações para o repositório:
+## Ferramenta Utilizada
 
-git add .
-git commit -m "Publicação do jogo [Nome do Jogo] por [Seu Nome Completo]"
-git push origin main
+[MelonJS](https://melonjs.org/)
 
-Opção 2: Usando a Interface do GitHub
-Acesse este repositório no seu navegador.
+## Assets Usados
 
-Clique no botão "Add file" e depois em "Upload files".
+<img src="./bullet-heaven/src/assets/health/filled-heart.png" alt="drawing" width="64"/> [Pixel Heart and Mana UI by HochuPitsu](https://hochupitsu.itch.io/heart-and-mana)
 
-Arraste e solte a pasta com o seu jogo ou todos os seus arquivos diretamente na área de upload. Se preferir, você pode criar uma pasta com o seu nome antes de enviar os arquivos. Para fazer isso, clique em "Create new file" e digite nome-completo-do-aluno/README.md. A barra / irá criar a pasta.
+<img src="./bullet-heaven/src/assets/zombie-axe/idle-animation-preview.gif" alt="drawing" width="64"/> [Post Apocalypse Pixel Art Asset Pack by TheLazyStone](https://thelazystone.itch.io/post-apocalypse-pixel-art-asset-pack)
 
-No campo de mensagem, escreva uma breve descrição, como Publicação do jogo [Nome do Jogo] por [Seu Nome Completo].
+<img src="./bullet-heaven/src/assets/upgrades/heal.png" alt="drawing" width="96"/> [Raven Fantasy Icons by ClockWork Raven](https://clockworkraven.itch.io/raven-fantasy-icons) & [Tiny RPG - Mana Soul GUI by tiopalada](https://tiopalada.itch.io/tiny-rpg-mana-soul-gui)
 
-Clique em "Commit changes" no final da página.
 
-2. Padrão de Nomenclatura
-Para manter o repositório organizado, siga este padrão para o nome da sua pasta:
+## Como rodar
 
-Seu Nome Completo (ex: joao-da-silva)
+Faça o clone do projeto e abra a pasta dele no terminal.
 
-Nome do Grupo (ex: grupo-01)
+Em seguida, navegue até a pasta do jogo com 
 
-3. Dúvidas
-Se tiver qualquer problema, entre em contato com o professor ou o monitor para obter ajuda.
+```sh
+cd bullet-heaven
+```
+
+E instale as dependências com 
+
+```sh
+npm install
+```
+
+Após isso, rode o jogo com o comando
+
+```sh
+npm run dev
+```
+
+E em seguida acessar a url do Localhost indicada no terminal.
+
+## Galeria
+
+![image](./tela-principal.png)
+
+![image](./tela-selecao-upgrade.png)
+
+![image](./tela-game-over.png)
