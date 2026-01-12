@@ -1,7 +1,5 @@
 # Golden Escape 🎮
 
-<img width="803" height="602" alt="image" src="https://github.com/user-attachments/assets/eb3e69b4-1de1-4695-a3dc-9d7e263f768d" />
-
 Um jogo 2D plataforma emocionante desenvolvido com **Phaser 3** e JavaScript.
 
 ## 📖 Sobre o Jogo
@@ -19,7 +17,12 @@ Um jogo 2D plataforma emocionante desenvolvido com **Phaser 3** e JavaScript.
 
 ## 🚀 Como Iniciar o Jogo
 
-### Com Live Server
+### Opção 1: Direto do Navegador (Mais Simples)
+1. Localize o arquivo `index.html` na pasta do projeto
+2. Clique duas vezes no arquivo ou arraste-o para o navegador
+3. O jogo carregará automaticamente
+
+### Opção 2: Com Live Server (Recomendado para Desenvolvimento)
 1. Abra a pasta do projeto no VS Code
 2. Instale a extensão "Live Server" (se ainda não tiver)
 3. Clique com botão direito em `index.html`
@@ -90,9 +93,6 @@ Primeiro desafio com:
 - Inimigos em movimento
 - Sistema de pontuação
 
-- <img width="802" height="600" alt="image" src="https://github.com/user-attachments/assets/c92b8a92-ba23-464b-9a84-9295ee01e624" />
-
-
 ### Scene02 (Segundo Nível)
 Segundo desafio mais difícil com:
 - Layouts mais complexos
@@ -102,6 +102,17 @@ Segundo desafio mais difícil com:
 
 ### EndScene
 Tela de vitória exibida ao completar o jogo.
+
+## 🚀 Como Executar
+
+### Opção 1: Direto do Navegador
+1. Abra o arquivo `index.html` em um navegador web moderno
+2. O jogo carregará automaticamente
+
+### Opção 2: Com Live Server (Recomendado)
+1. Use a extensão Live Server do VS Code
+2. Clique com botão direito em `index.html`
+3. Selecione "Open with Live Server"
 
 ### Requisitos:
 - Navegador web moderno (Chrome, Firefox, Edge, Safari)
