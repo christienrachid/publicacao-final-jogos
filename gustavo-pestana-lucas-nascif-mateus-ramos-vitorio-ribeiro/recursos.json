@@ -1,0 +1,24 @@
+{
+  "grupo": [
+    "Gustavo Pestana",
+    "Lucas Nascif",
+    "Mateus Ramos",
+    "Vitório Ribeiro"
+  ],
+  "versao": "Revisão 49 com carregamento ilustrado e controles móveis",
+  "jogavel": "https://pestana04.github.io/ultima-vigilia-web/",
+  "midia": {
+    "arquivo": "midia-revisao-49.zip",
+    "url": "https://github.com/Pestana04/ultima-vigilia-web/releases/download/revisao-49/midia-revisao-49.zip",
+    "bytes": 287071857,
+    "sha256": "7be528bdac7127cfa0517ec33cb1f4c6b3f5aefd96be9ea289b79817afaa18a2"
+  },
+  "construct": {
+    "arquivo": "Ultima-Vigilia-Revisao-49-Creditos-da-Vigilia.c3p",
+    "url": "https://github.com/Pestana04/ultima-vigilia-web/releases/download/revisao-49/Ultima-Vigilia-Revisao-49-Creditos-da-Vigilia.c3p",
+    "bytes": 284612985,
+    "sha256": "5c78a547df01ef7610048097927be811a1975162933a136e2410c999738df683"
+  },
+  "codigo_web_commit_base": "e48f9ce8943fbf3c98ccf707ffb89d1acaf9cc7c",
+  "codigo_web_versao": "mobile-v1"
+}

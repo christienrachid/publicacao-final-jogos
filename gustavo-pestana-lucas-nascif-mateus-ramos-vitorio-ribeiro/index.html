@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#100b16">
+  <meta name="description" content="Última Vigília. Uma jornada pelas ruínas para recuperar a Chama e salvar a vila.">
+  <title>Última Vigília</title>
+  <link rel="preload" href="./loading/metal-mania.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./loading/ruinas.webp" as="image">
+  <link rel="stylesheet" href="./style.css?v=touch-2">
+  <link rel="stylesheet" href="./touch/style.css?v=touch-2">
+</head>
+<body>
+  <main id="stage">
+    <canvas id="game" width="1280" height="720" tabindex="0" aria-label="Última Vigília. Use as setas e Enter para navegar pelo menu."></canvas>
+    <section id="loading" aria-label="Carregamento">
+      <div class="loading-gallery" aria-hidden="true">
+        <img id="loading-art-front" class="is-current" src="./loading/ruinas.webp" alt="" fetchpriority="high" decoding="async">
+        <img id="loading-art-back" alt="" decoding="async">
+      </div>
+      <div class="loading-shade" aria-hidden="true"></div>
+      <h1>Última Vigília</h1>
+      <div class="loading-copy">
+        <p id="loading-tip">Observe os movimentos do inimigo e guarde fôlego para esquivar.</p>
+        <div class="loading-status">
+          <p id="loading-text" role="status">Preparando a vigília…</p>
+          <span id="loading-percent" aria-hidden="true">0%</span>
+        </div>
+        <progress id="loading-progress" aria-label="Progresso do carregamento" max="1" value="0"></progress>
+        <button id="retry" hidden>Carregar novamente</button>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="./boot.js?v=touch-2"></script>
+</body>
+</html>

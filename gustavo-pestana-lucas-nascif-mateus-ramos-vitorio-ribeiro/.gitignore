@@ -1,0 +1,6 @@
+images/
+files/
+*.zip
+*.c3p
+*.part
+__pycache__/
