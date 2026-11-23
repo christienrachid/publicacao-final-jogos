@@ -1,0 +1,16 @@
+﻿{
+  "_license": "LGPL-2.1-or-later; independently authored SI parameter estimates for the FGRotor port, JSBSim-Team attribution in rotor.ts / LICENSE-JSBSim.txt.",
+  "_sources": {
+    "dimensions": "https://www.mdhelicopters.com/wp-content/uploads/2023/04/MD_500E_Product_Spec.pdf (2023, main diameter 8.05 m, tail 1.40 m, five main blades, 1361 kg gross rounded to 1360)",
+    "rotorEquations": "JSBSim src/models/propulsion/FGRotor.cpp, commit 3f153c18a2518f8472e37c89e70444b1c671b700 (LGPL-2.1)",
+    "referenceLayout": "AH-1S main/tail rotor wiring inspected only. Its GPL aircraft configuration is not copied.",
+    "estimates": "Chord, twist, RPM, inertia, drag and response times below are educational estimates, not MD flight-test or certification data."
+  },
+  "mass": 1360,
+  "yawInertia": 1650,
+  "tailArm": 4.2,
+  "enginePower": 261000,
+  "dragArea": 1.8,
+  "main": { "radius": 4.025, "blades": 5, "chord": 0.17, "rpm": 490, "twist": -0.14, "liftCurveSlope": 6.283185307179586, "inflowLag": 0.1 },
+  "tail": { "radius": 0.7, "blades": 2, "chord": 0.1, "rpm": 3000, "twist": 0, "liftCurveSlope": 6.283185307179586, "inflowLag": 0.1 }
+}

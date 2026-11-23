@@ -1,0 +1,326 @@
+{
+  "_origin": "Derived by rescaling JSBSim aircraft/pc7/pc7.xml and Engines/PT6A.xml; estimated A-29 variant, not measured A-29 polars; LGPL-2.1, JSBSim-Team",
+  "sourceCommit": "3f153c18a2518f8472e37c89e70444b1c671b700",
+  "name": "A-29 Super Tucano (PC-7-derived educational estimate)",
+  "notes": "User-requested A-29 dimensions/performance; aerodynamic tables remain the PC-7 educational model. Empty 3200 kg, payload 200 kg, fuel 500 kg, nominal 3900 kg, MTOW 5400 kg. Diagonal inertias scale with nominal mass ratio and squared span/length ratios; no measured A-29 inertia data. No manufacturer validation.",
+  "area": 19.4,
+  "span": 11.1,
+  "chord": 1.7477477477477477,
+  "emptyMass": 3200,
+  "payloadMass": 200,
+  "fuelMass": 500,
+  "inertia": [
+    5775.9489060614,
+    10790.21331609642,
+    14394.045484659498
+  ],
+  "aeroReferenceAboveCg": 0.244602,
+  "controlLimit": 0.35,
+  "engine": {
+    "powerWatts": 1193119.7945316324,
+    "staticThrustNewtons": 11800.934718115319,
+    "efficiency": 0.8
+  },
+  "tables": {
+    "Lift_propwash": {
+      "rows": [
+        -0.29,
+        0.0,
+        0.3,
+        0.59
+      ],
+      "columns": [
+        0.0,
+        60.0
+      ],
+      "values": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.087,
+          0.232
+        ],
+        [
+          0.389,
+          1.038
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    "Lift_alpha": [
+      [
+        -0.2,
+        -0.6018
+      ],
+      [
+        0.0,
+        0.39
+      ],
+      [
+        0.27,
+        1.7471
+      ],
+      [
+        0.6,
+        0.9328
+      ]
+    ],
+    "Drag_basic": [
+      [
+        -1.57,
+        1.4093
+      ],
+      [
+        -0.27,
+        0.0749
+      ],
+      [
+        0.0,
+        0.0197
+      ],
+      [
+        0.27,
+        0.0749
+      ],
+      [
+        1.57,
+        1.4093
+      ]
+    ],
+    "Drag_mach": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.75,
+        0.0
+      ],
+      [
+        1.1,
+        0.023
+      ],
+      [
+        1.8,
+        0.015
+      ]
+    ],
+    "Drag_beta": [
+      [
+        -1.57,
+        1.23
+      ],
+      [
+        -0.26,
+        0.05
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.26,
+        0.05
+      ],
+      [
+        1.57,
+        1.23
+      ]
+    ],
+    "Side_roll_rate": [
+      [
+        4237447.0,
+        0.218
+      ],
+      [
+        4661192.0,
+        0.0191
+      ],
+      [
+        6356170.0,
+        0.0085
+      ],
+      [
+        8404342.0,
+        0.0049
+      ]
+    ],
+    "Pitch_propwash": {
+      "rows": [
+        -0.02,
+        0.0,
+        0.3,
+        0.39
+      ],
+      "columns": [
+        0.0,
+        60.0
+      ],
+      "values": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.054,
+          -0.144
+        ],
+        [
+          -0.243,
+          -0.647
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    "Pitch_elevator": [
+      [
+        0.0,
+        -1.6414
+      ],
+      [
+        2.0,
+        -0.4104
+      ]
+    ],
+    "Roll_beta": {
+      "rows": [
+        -0.0349,
+        0.3491
+      ],
+      "columns": [
+        4237447.0,
+        4661192.0,
+        6356170.0,
+        8404342.0
+      ],
+      "values": [
+        [
+          -0.554,
+          -0.1534,
+          -0.132,
+          -0.1247
+        ],
+        [
+          -0.6227,
+          -0.161,
+          -0.1399,
+          -0.1332
+        ]
+      ]
+    },
+    "Roll_yaw": {
+      "rows": [
+        -0.0349,
+        0.3491
+      ],
+      "columns": [
+        4237447.0,
+        4661192.0,
+        6356170.0,
+        8404342.0
+      ],
+      "values": [
+        [
+          0.5608,
+          0.0881,
+          0.0629,
+          0.0542
+        ],
+        [
+          4.8743,
+          0.5642,
+          0.5389,
+          0.5302
+        ]
+      ]
+    },
+    "Roll_aileron": [
+      [
+        0.0,
+        0.18
+      ],
+      [
+        2.0,
+        0.045
+      ]
+    ],
+    "Yaw_alpha": {
+      "rows": [
+        -0.3491,
+        0.3491
+      ],
+      "columns": [
+        4237447.0,
+        4261192.0
+      ],
+      "values": [
+        [
+          -1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ]
+    },
+    "Yaw_roll_rate": [
+      [
+        4237447.0,
+        -2.1839
+      ],
+      [
+        4661192.0,
+        -0.1917
+      ],
+      [
+        6356170.0,
+        -0.0852
+      ],
+      [
+        8404342.0,
+        -0.0487
+      ]
+    ]
+  },
+  "constants": {
+    "Lift_pitch_rate": 5.2675,
+    "Lift_alpha_rate": 2.473,
+    "Lift_elevator": 0.2903,
+    "Lift_flap": 0.0092,
+    "Drag_induced": 0.0522,
+    "Drag_elevator": 0.04,
+    "Drag_gear": 0.03,
+    "Drag_flap": 0.0012,
+    "Side_beta": -0.231,
+    "Side_yaw_rate": 0.2606,
+    "Side_rudder": 0.1407,
+    "Pitch_alpha": -1.407,
+    "Pitch_damp": -19.3187,
+    "Pitch_alphadot": -9.0698,
+    "Roll_differential_propwash": 0.1607,
+    "Roll_damp": -0.4643,
+    "Roll_rudder": 0.01,
+    "Yaw_beta": 0.1303,
+    "Yaw_damp": -0.1585,
+    "Yaw_rudder": -0.0794,
+    "Yaw_aileron": -0.003
+  },
+  "references": [
+    "https://www.embraer.com/defense-security-air/a-29-super-tucano/en",
+    "https://www.columbus.af.mil/Portals/39/SW191206.pdf"
+  ],
+  "length": 11.38,
+  "maximumMass": 5400,
+  "maximumSpeed": 163.88888888888889,
+  "stallSpeed": 40,
+  "trimSpeed": 70
+}
